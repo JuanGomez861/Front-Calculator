@@ -1,0 +1,62 @@
+.header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header p{
+    font-weight: bold;
+    font-size: 1.5rem;
+    align-self: flex-end;
+    color: white;
+  }
+  .Numbers{
+    grid-column: 2/-1;
+    grid-row: 1/2;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    gap: 8px;
+  }
+  .toggle_container{
+    width: 80px;
+    height: 30px;
+    background-color:hsl(224, 36%, 15%);
+    border-radius: 40px;
+    box-shadow: 0 0 2px hsl(222, 26%, 31%);
+    padding: 5px;
+    grid-row: 2/-1;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+  }
+  .theme span{
+    grid-row: 2/-1;
+    font-size: 1.3rem;
+    align-self: flex-end;
+    color: white;
+  }
+  .toggle{
+    width: 20px;
+    height: 20px;
+    background-color: hsl(6, 70%, 34%);
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  .theme{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+  }
+
+ .theme-2{
+  color: black;
+} 
+.header-theme-2 p, .header-theme-2 span{
+    color: black;
+}
+.t-c-theme-2{
+  background-color: hsl(0, 5%, 81%);
+}
+.toggle-theme-2{
+  background-color: hsl(25, 98%, 40%);
+}
