@@ -10,7 +10,7 @@ export function App(){
   const handleClick=(valor)=>{
     updateDisplay(valor)
   }
-  const bodyClass=`page ${toggle==2 ? 'page-theme-2': ''}`
+  const bodyClass=`page ${toggle==2 ? 'page-theme-2': toggle==3 ? 'page-theme-3':'' }`
   return(
     <div className={bodyClass}>
     <main className="main">

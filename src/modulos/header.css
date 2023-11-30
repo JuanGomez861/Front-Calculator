@@ -3,11 +3,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    transition: color .5s ease;
   }
   .header p{
     font-weight: bold;
     font-size: 1.5rem;
     align-self: flex-end;
+    transition: color .5s ease;
     color: white;
   }
   .Numbers{
@@ -28,12 +30,14 @@
     grid-row: 2/-1;
     display: grid;
     grid-template-columns: repeat(3,1fr);
+    cursor: pointer;
   }
   .theme span{
     grid-row: 2/-1;
     font-size: 1.3rem;
     align-self: flex-end;
     color: white;
+    transition: color .5s ease;
   }
   .toggle{
     width: 20px;
@@ -41,6 +45,11 @@
     background-color: hsl(6, 70%, 34%);
     border-radius: 50%;
     cursor: pointer;
+    transform: scale(1);
+    transition: background-color .3s ease;
+  }
+  .toggle:hover{
+    background-color: hsl(6, 63%, 50%);
   }
   .theme{
     display: grid;
@@ -48,9 +57,7 @@
     grid-template-rows: repeat(2,1fr);
   }
 
- .theme-2{
-  color: black;
-} 
+
 .header-theme-2 p, .header-theme-2 span{
     color: black;
 }
@@ -59,4 +66,28 @@
 }
 .toggle-theme-2{
   background-color: hsl(25, 98%, 40%);
+}
+.toggle-theme-2:hover{
+  background-color: hsl(25, 73%, 55%);
+}
+.header-theme-3 p, .header-theme-3 span{
+  color: hsl(52, 100%, 62%);
+}
+.t-c-theme-3{
+  background-color: hsl(268, 71%, 12%);
+}
+.toggle-theme-3{
+  background-color: hsl(176, 100%, 44%);
+}
+.toggle-theme-3:hover{
+  background-color: hsl(177, 92%, 70%);
+}
+@media screen and (max-width:500px){
+  .header p{
+    font-size: 1.2rem;
+  }
+  .header span{
+    font-size: 1.2rem;
+    text-align: center;
+  }
 }

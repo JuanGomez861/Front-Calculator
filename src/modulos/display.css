@@ -10,8 +10,13 @@
     justify-content: end;
     padding: 0 20px;
     font-size: 2.5rem;
+    transition: background-color .5s ease,color .5s ease;
   }
   .display-theme-2{
     background-color: hsl(0, 0%, 93%);
     color: hsl(60, 10%, 19%);
+  }
+  .display-theme-3{
+    background-color: hsl(268, 71%, 12%);
+    color: hsl(52, 100%, 62%);
   }
